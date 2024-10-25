@@ -22,6 +22,7 @@ const Button = (props) => {
     <button
       onClick={() => {
         // On click we can call the referenced function, which passes updated state up to the parent component
+        // This is called lifting state, as we lift it upwards
         props.setCount(props.count + 1);
       }}
     >
